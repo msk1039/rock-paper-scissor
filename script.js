@@ -58,6 +58,7 @@ const endgameModal = document.getElementById('endgameModal')
 const endgameMsg = document.getElementById('endgameMsg')
 const overlay = document.getElementById('overlay')
 const restartBtn = document.getElementById('restartBtn')
+const hist = document.getElementById('hist')
 
 rockBtn.addEventListener('click', () => handleClick('ROCK'))
 paperBtn.addEventListener('click', () => handleClick('PAPER'))
@@ -75,6 +76,7 @@ function handleClick(playerSelection) {
   playRound(playerSelection, computerSelection)
   updateChoices(playerSelection, computerSelection)
   updateScore()
+  logs(playerSelection, computerSelection)
 
   if (isGameOver()) {
     openEndgameModal()
@@ -172,5 +174,23 @@ function restartGame(){
   computerSign.textContent = '❔'
   endgameModal.classList.remove('active')
   overlay.classList.remove('active')
+  resetlogs()
 
+}
+
+let roundCount = 0;
+
+function logs(playerSelection, computerSelection){
+    const logtext = document.createElement('p')
+    roundCount++
+    logtext.textContent = `round #${roundCount}: You:${capitalizeFirstLetter(playerSelection)} vs Computer:${computerSelection.toLowerCase()}, Score: ${playerScore} - ${computerScore} `
+    hist.appendChild(logtext)
+    return
+
+}
+
+function resetlogs(){
+    hist.textContent = ''
+    roundCount = 0
+    return
 }

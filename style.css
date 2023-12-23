@@ -24,7 +24,8 @@ html {
   
 body {
    
-    background-image: url(./rock-paper-scissors-pattern-background-vector-4521145.jpg);
+    background-image:  linear-gradient(146deg, rgba(255,253,227,1) 0%, rgba(255,218,227,1) 38%, rgba(255,218,250,1) 67%, rgba(190,250,255,1) 100%),url(./rock-paper-scissors-pattern-background-vector-4521145.jpg);
+    background-size: cover;
     color: var(--primary-light);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -63,7 +64,7 @@ button {
 .glass-box{
     background-color: var(--primary-dark);
     
-    backdrop-filter: blur(30px);
+
     border-radius: 10px;
     padding: 20px;
     margin: 0 auto;
@@ -76,6 +77,23 @@ button {
 .main {
     margin-top: 40px;
     text-align: center;
+}
+
+.log{
+    background-color: var(--primary-dark);
+    
+
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 500px;
+    text-align: center;
+
+
+}
+.log2{
+    text-align: left;
 }
   
 .scoreboard {
