@@ -69,6 +69,7 @@ button {
     border-radius: 10px;
     padding: 20px;
     margin: 0 auto;
+
     max-width: 500px;
     text-align: center;
 
@@ -78,6 +79,7 @@ button {
 .main {
     margin-top: 40px;
     text-align: center;
+    
 }
 
 .log{
@@ -88,7 +90,7 @@ button {
     padding: 20px;
     margin: 0 auto;
     margin-top: 40px;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
 
 
@@ -270,5 +272,11 @@ button {
   
     .modal {
       width: 95%;
+    }
+    .glass-box{
+        max-width: 90%;
+    }
+    .log{
+        max-width: 90%;
     }
   }
