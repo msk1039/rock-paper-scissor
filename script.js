@@ -93,7 +93,7 @@ function updateChoices(playerSelection, computerSelection) {
       playerSign.textContent = '✋'
       break
     case 'SCISSORS':
-      playerSign.textContent = '✌'
+      playerSign.textContent = '✌️'
       break
   }
 

@@ -231,14 +231,16 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    backdrop-filter: blur(50px);
-    opacity: 0.6;
+    
+
    
 }
   
 .overlay.active {
     display: block;
+    background-color: rgba(0, 0, 0, 0.1);
+  
+    backdrop-filter: blur(10px);
     
 }
   
